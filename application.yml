@@ -1,0 +1,8 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/supplier_dashboard  #supplier_dashboard is the database name
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+  liquibase:
+    changelog: classpath:/database/changelog/database-changelog-schema.xml
