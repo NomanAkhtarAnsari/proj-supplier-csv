@@ -6,3 +6,5 @@ spring:
     driver-class-name: org.postgresql.Driver
   liquibase:
     changelog: classpath:/database/changelog/database-changelog-schema.xml
+  profiles:
+    active: local
