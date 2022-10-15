@@ -7,3 +7,5 @@
 
 # Profiles
 application-local.yml
+
+target/
