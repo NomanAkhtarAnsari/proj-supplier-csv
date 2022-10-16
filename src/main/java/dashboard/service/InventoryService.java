@@ -23,7 +23,7 @@ public class InventoryService {
         this.productInventoryDao = productInventoryDao;
     }
 
-    public InventoryResponse insertOrUpdateInventory(MultipartFile file) {
+    public InventoryResponse addInventory(MultipartFile file) {
         List<Inventory> inventoryList = FileParseUtil.parseFile(file);
         for (Inventory inventory : inventoryList) {
             Long inventoryId = productInventoryDao.insert(inventory);

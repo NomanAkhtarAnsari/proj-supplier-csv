@@ -7,8 +7,6 @@ import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
-import javax.websocket.server.PathParam;
-
 @RestController
 @RequestMapping("v1/inventory")
 public class InventoryController {
@@ -21,8 +19,8 @@ public class InventoryController {
     }
 
     @PostMapping(consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
-    public InventoryResponse insertOrUpdateInventory(@RequestParam("file") MultipartFile file) {
-        return inventoryService.insertOrUpdateInventory(file);
+    public InventoryResponse addInventory(@RequestParam("file") MultipartFile file) {
+        return inventoryService.addInventory(file);
     }
 
     @GetMapping()
