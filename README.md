@@ -1,2 +1,4 @@
 # proj-supplier-csv
-We store the supplier data using CSV.
+Dashboard for suppliers
+
+Supplier can add and fetch inventory
